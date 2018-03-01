@@ -3,7 +3,7 @@
 * Студент: [Ирина Голубева](https://up.htmlacademy.ru/htmlcss/20/user/315863).
 * Наставник: `Михаил Поданев`.
 
----
+(https://htmlacademy.ru/profile/mpodanev)---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
