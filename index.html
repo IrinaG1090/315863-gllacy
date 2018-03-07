@@ -1,26 +1,46 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Glaccy</title>
+</head>
+<body>
     <header class="main-header">
         <nav class="main-navigation">
             <a class="main-header-logo">
                 <img src="img/index-logo.svg" alt="Логотип «Glaccy»">
             </a>
             <ul class="site-navigation">
-                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="catalog.html">Каталог</a>
+                    <ul class="menu-navigation">
+                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">Щербеты</a></li>
+                        <li><a href="#">Фруктовый лед</a></li>
+                        <li><a href="#">Мелорин</a></li>
+                    </ul>
+                </li>    
                 <li><a href="payment.html">Доставка и оплата</a></li>
                 <li><a href="company.html">О Компании</a></li>
             </ul>
             <div class="user-navigation">
                 <div class="user-search">
                     <a class="user-search-line" href="#">Поиск</a>
+                    <div class="search-block">
+                        <input type="text" name="search" placeholder="Что ищем?">
+                    </div>
                 </div>
                 <div class="user-login">
-                    <a class="user-login-button" href="#">Вход</a>        
+                    <a class="user-login-button" href="#">Вход</a> 
+                    <div class="entry">
+                        <!--form-->
+                        <input type="email" name="login-email" placeholder="Электронная почта">
+                        <input type="password" name="login-password" placeholder="Пароль">
+                        <button>Войти</button>
+                        <span><a href="#">Забыли пароль?</a></span>
+                        <span><a href="#">Новая регистрация</a></span>
+                    </div>       
                 </div>
                 <div class="user-cart">
                     <a class="user-cart-line" href="#">Пусто</a>
@@ -49,7 +69,6 @@
                 <input type="radio" name="toggle" value="">
                 <input type="radio" name="toggle" value="">
             </div>
-        </div>
         <section class="features">
             <div class="features-item">
                 <h2>Малинка даром!</h2>
@@ -140,25 +159,7 @@
             <p>Сделано в <a href="http://www.htmlacademy.ru">HTML Academy</a>© 2017</p>
         </div>    
     </footer>
-    <section class="menu">
-        <ul class="menu-navigation">
-            <li><a href="#">Новинки</a></li>
-            <li><a href="#">Щербеты</a></li>
-            <li><a href="#">Фруктовый лед</a></li>
-            <li><a href="#">Мелорин</a></li>
-        </ul>
-    </section>
-    <section class="entry">
-        <!--form-->
-        <input type="email" name="login-email" placeholder="Электронная почта">
-        <input type="password" name="login-password" placeholder="Пароль">
-        <button>Войти</button>
-        <span><a href="#">Забыли пароль?</a></span>
-        <span><a href="#">Новая регистрация</a></span>
-    </section>
-    <section class="search-block">
-        <input type="text" name="search" placeholder="Что ищем?">
-    </section>
+        
     <section class="feedback">
         <!--form-->
         <h3>Мы обязательно вам ответим!</h3>
