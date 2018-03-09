@@ -26,21 +26,24 @@
             </ul>
             <div class="user-navigation">
                 <div class="user-search">
-                    <a class="user-search-line" href="#">Поиск</a>
+                    <a class="user-search-line" href="#"></a>
                     <div class="search-block">
-                        <input type="text" name="search" placeholder="Что ищем?">
+                        <form action="#" method="POST">
+                        <label for="search"><input type="text" name="search" placeholder="Что ищем?"></label>
+                        </form>
                     </div>
                 </div>
                 <div class="user-login">
                     <a class="user-login-button" href="#">Вход</a> 
-                    <div class="entry">
-                        <!--form-->
-                        <input type="email" name="login-email" placeholder="Электронная почта">
-                        <input type="password" name="login-password" placeholder="Пароль">
-                        <button>Войти</button>
+                        <form action="#" method="POST">
+                        <label for="login-email"><input type="email" name="login-email" placeholder="Электронная почта" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required></label>
+                        <label for="login-password"><input type="password" name="login-password" placeholder="Пароль" required></label>
+                        <button type="submit">Войти</button>
+                        <div class="entry">
                         <span><a href="#">Забыли пароль?</a></span>
                         <span><a href="#">Новая регистрация</a></span>
-                    </div>       
+                        </div>
+                        </form>       
                 </div>
                 <div class="user-cart">
                     <a class="user-cart-line" href="#">Пусто</a>
@@ -65,9 +68,9 @@
             <a class="button" href="#">Давайте оба!</a>
         </div>
             <div class="slider-box">
-                <input type="radio" name="toggle" value="">
-                <input type="radio" name="toggle" value="">
-                <input type="radio" name="toggle" value="">
+                <label for="toggle"><input type="radio" name="toggle" value="" checked></label>
+                <label for="toggle"><input type="radio" name="toggle" value=""></label>
+                <label for="toggle"><input type="radio" name="toggle" value=""></label>
             </div>
         <section class="features">
             <div class="features-item">
@@ -124,8 +127,8 @@
         </article>
         <article class="subs">
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <input type="email">Электронная почта
-            <button>Отправить</button>
+            <label for="subs=email"><input type="email" name="subs-email" value="" placeholder="Электронная почта" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"></label>
+            <button type="submit">Отправить</button>
         </article>
         <div class="contacts">
             <div class="map"></div>
@@ -134,8 +137,18 @@
                 <p>Для заказов по телефону:</p>
                 <b>8 812 450-25-25</b><br>
                 <p>(с 10 до 20 ежедневно)</p>
-            <form><a href="#">Форма обратной связи</a></form>
+            <a class="button" href="#">Форма обратной связи</a>
         </div>
+        <section class="feedback">
+        <h3>Мы обязательно вам ответим!</h3>    
+        <form class="feedback" action="#" method="POST">
+        <label for="feedback-name"><input type="text" name="feedback-name" placeholder="Как вас зовут?" required></label>
+        <label for="feedback-email"><input type="email" name="feedback-email" placeholder="Ваша почта для ответа?" required pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"></label>
+        <textarea placeholder="Напишите что-нибудь..."></textarea>
+        <button type="submit">Отправить</button>
+        <button class="modal-close" type="button">Закрыть</button>
+        </form>
+        </section>
     </main>
     <footer class="main-footer">
         <ul class="footer-social">
@@ -159,16 +172,6 @@
             <p>Сделано в <a href="http://www.htmlacademy.ru">HTML Academy</a>© 2017</p>
         </div>    
     </footer>
-        
-    <section class="feedback">
-        <!--form-->
-        <h3>Мы обязательно вам ответим!</h3>
-        <input type="text" name="name" placeholder="Как вас зовут?">
-        <input type="email" name="login-email" placeholder="Ваша почта для ответа?">
-        <textarea placeholder="Напишите что-нибудь..."></textarea>
-        <button>Отправить</button>
-        <span class="modal-close">x</span>
-    </section>
-
+    
 </body>
 </html>
