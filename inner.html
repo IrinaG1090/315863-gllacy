@@ -29,14 +29,14 @@
                     <table class="user-table">
                         <tr>
                             <td><button class="close" type="button">Закрыть</button></td>
-                            <td><img src="img/1row/1.jpg" width="150" height="100" alt="апельсиновое"></td>
+                            <td><img src="img/1row/1.jpg" width="50" height="50" alt="апельсиновое"></td>
                             <td><p>Пломбир с апельсиновым джемом</p></td>
                             <td>1,5 кг х <span class="price">200 руб.</span></td>
                             <td>300 руб.</td>
                         </tr>
                         <tr>
                             <td><button class="close" type="button">Закрыть</button></td>
-                            <td><img src="img/1row/3.jpg" width="150" height="100" alt="клубничное"></td>
+                            <td><img src="img/1row/3.jpg" width="50" height="50" alt="клубничное"></td>
                             <td><p>Клубничный пломбир с присыпкой из белого шоколада</p></td>
                             <td>1,5 кг х <span class="price>">300 руб.</span></td>
                             <td>450 руб.</td>
@@ -57,7 +57,6 @@
             </div>
         </nav>
     </header> 
-
     <main class="container">
             <div class="crumbs">
                     <ul class="crumbs-list">
@@ -66,7 +65,6 @@
                         <li>Сливочное</li>
                     </ul>
                 </div>
-
         <h1>Сливочное мороженое</h1>
         <section class="filters">
                 <form action="#" method="POST">
@@ -90,23 +88,22 @@
             </div>
             <div class="filters-four">
                 <label class="filters-creamy">Жирность:</label>
-                <label for="creamy-0"><input type="radio" name="creamy-0" value="0%">0%</label>
-                <label for="creamy-10"><input type="radio" name="creamy-10" value="10%" checked>до 10%</label>
-                <label for="creamy-30"><input type="radio" name="creamy-30" value="30%">до 30%</label>
-                <label for="creamy-more"><input type="radio" name="creamy-more" value="more30%">свыше 30%</label>
+                <label for="0%"><input type="radio" name="creamy" id="0%" value="0%">0%</label>
+                <label for="10%"><input type="radio" name="creamy" id="10%" value="10%" checked>до 10%</label>
+                <label for="30%"><input type="radio" name="creamy" id="30%" value="30%">до 30%</label>
+                <label for="more30%"><input type="radio" name="creamy" id="more30%" value="more30%">свыше 30%</label>
             </div>
             <div class="filters-five">
-                <label for="chocolate"><input type="checkbox" name="chocolate" checked>шоколадные</label>
-                <label for="sugar"><input type="checkbox" name="sugar" checked>сахарные присыпки</label>
-                <label for="fruit"><input type="checkbox" name="fruit">фрукты</label>
-                <label for="sirup"><input type="checkbox" name="sirup">сиропы</label>
-                <label for="jam"><input type="checkbox" name="jam">джемы</label>
+                <label for="choco"><input type="checkbox" id="choco" name="chocolate">шоколадные</label>
+                <label for="sugar"><input type="checkbox" id="sugar" name="sugar">сахарные присыпки</label>
+                <label for="fruit"><input type="checkbox" id="fruit" name="fruit">фрукты</label>
+                <label for="sirup"><input type="checkbox" id="sirup" name="sirup">сиропы</label>
+                <label for="jam"><input type="checkbox" id="jam" name="jam">джемы</label>
             </div>
             <div class="apply">
             <button type="submit">Применить</button>
             </div>
         </section>
-
         <section class="catalog">
             <ul class="catalog-products">
                 <li class="catalog-product">
@@ -183,10 +180,9 @@
                     <p>Сливочное с мятным сиропом</p>
                 </li>
             </ul>
-
             <div class="page">
                 <a class="prev" href="#">&lt;</a>
-                <a class="active" href="#">1</a>
+                <a class="active">1</a>
                 <a href="#">2</a>
                 <a href="#">3</a>
                 <a href="#">4</a>
@@ -195,7 +191,6 @@
             </div>
         </section>
     </main> 
-    
     <footer class="main-footer">
         <ul class="footer-social">
             <li><a class="social-button" href="#">Твитер</a></li>
