@@ -2065,6 +2065,7 @@ color: #fff;
 background-color: #abbcb2;
 border: 2px solid #fff;
 min-height: 37px;
+cursor: pointer;
 }
 
 select[name=sort]:hover {
