@@ -77,144 +77,113 @@
                   </form>
                 </section>
               </li>
-              <li class="user_navigation ">
-                <a href="#" aria-label="Корзина товаров">
+              <li class="user_navigation dropdown-wrp">
+                <a class="thumbnail" href="#" aria-label="Корзина товаров">
                     <img src="img/basket-red.svg" alt="товары в корзине" width="21" height="20">
                   <span>2 товара</span>
                 </a>
+
+
                 <section class="modal modal__cart">
-                    <h2 class="visually-hidden">Наполнение корзины</h2>
-                        <div class="table">
-                            <div class="row-1">
-                                <button class="modal__cart__delete-item" type="button"></button>                               
-                                    <p class="modal__cart__img">
-                                        <img src="img/orange-jam_small.jpg" alt="Пломбир с апельсиновым джемом" width="33" height="33">
-                                    </p>
-                                    <p class="modal-cart__ice-cream">Пломбир с апельсиновым джемом</p>
-                                    <p class="modal-cart__price">1,5кг х
-                                        <span class="modal-cart__price-count">200 руб.</span></p>
-                                    <p class="price-per-weight">300 руб.</p>
-                            </div>
-                            <div class="row-1">
-                                <button class="modal__cart__delete-item" type="button"></button>
-                                    <p class="modal__cart__img">
-                                        <img  src="img/strawberry_small.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
-                                    </p>
-                                    <p class="modal-cart__ice-cream">Клубничный пломбир с присыпкой из белого шоколада</p>
-                                    <p class="modal-cart__price">1,5кг х<span class="modal-cart__price-count">300 руб.</span></p>
-                                    <p class="price-per-weight">450 руб.</p>
-                            </div>
-                        </div>
-                        <span class="right">
-                            <b class="modal__cart__sum">Итого: 750 руб.</b>
-                        </span>
-                        <a class="button modal__cart__button" href="#">Оформить заказ</a> 
-                </section>   
+                    <div class="row-1">
+                         <button class="modal__cart__delete-item"></button>                               
+                     <div class="modal__cart__img">
+                         <img src="img/orange-jam_small.jpg" alt="Пломбир с апельсиновым джемом" width="33" height="33">
+                       Пломбир с апельсиновым джемом
+                     </div>         
+                     <div class="modal-cart__price">1,5кг х
+                        <span class="modal-cart__price-count">200 руб.</span>
+                     </div>
+                     <div class="price-per-weight">300 руб.</div>
+                   </div>
+                   <div class="row-1 row-1-last">
+                       <button class="modal__cart__delete-item"></button>
+                           <div class="modal__cart__img">
+                              <img src="img/strawberry_small.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
+                                Клубничный пломбир с присыпкой из белого шоколада
+                          </div>
+                           
+                          <div class="modal-cart__price">1,5кг х
+                              <span class="modal-cart__price-count">300 руб.</span>
+                         </div>
+                         <div class="price-per-weight">450 руб.</div>
+                   </div>
+                 
+                 <span class="right">
+                   Итого: 750 руб.
+                 </span>
+                 <a class="button modal__cart__button" href="#">Оформить заказ</a> 
+                 </section>  
+                 
+
               </li>
             </ul>
           </nav>
-          <div class="time_work">
-            <p>С 10 до 20, ежедневно</p>
-            <a href="tel:88124502525" aria-label="телефон обратной связи">8 812 450-25-25</a>
-          </div>
+          <div class="header-bottom">
+              <div class="time_work">
+                 <p>С 10 до 20, ежедневно</p>
+                 <a href="tel:88124502525" aria-label="телефон обратной связи">8 812 450-25-25</a>
+              </div>
+              <div class="breadcrumbs">
+                  <a class="breadcrumbs__link" href="index.html">Главная</a>
+                  <a class="breadcrumbs__link" href="#">Каталог</a>
+                  <span class="breadcrumbs__link--active" href="#">Сливочное</span>
+              </div>
+          </div>    
         </header>
 
     <main>
       <div class="container">
-          <ul class="breadcrumbs">
-            <li>
-              <a class="breadcrumbs__link" href="index.html">Главная</a>
-              <span class="section__breadcrumbs">&raquo;</span>
-            </li>
-            <li>
-              <a class="breadcrumbs__link" href="#">Каталог</a>
-              <span class="section__breadcrumbs">&raquo;</span>
-            </li>
-            <li>
-              <p class="breadcrumbs__link--active" href="#">Сливочное</p>
-            </li>
-        </ul>
+          
         <h1 class="header">Сливочное мороженое</h1>
 
-        <section class="choice">
+<form class="filters" action="https://echo.htmlacademy.ru" method="get">
+    <div class="filters-label">
+        <div class="filter-title">Сортировка:</div>
+        <div class="wrap-select-sort">
+           <select name="sort">
+             <option value="popular">по популярности</option>
+             <option value="up">сначала недорогие</option>
+             <option value="down">сначала дорогие</option>
+             <option value="fat">по жирности</option>
+           </select>
+        </div>
+    </div>
+    <div class="filters-label">
+      <div class="filter-title">Цена: 100 руб. - 500 руб.</div>
+      <div class="filter-cost">
+        <div class="scale"></div>
+        <div class="bar"></div>
+        <div class="range-toggle"></div>
+        <div class="range-toggle"></div>
+      </div>
+    </div>
+    <fieldset>
+        <legend class="filter-title">Жирность:</legend>
+        <div class="container-buttons">
+          <input id="fat-0" type="radio" name="fat" value="0"><label for="fat-0">0%</label>
+          <input id="fat-<10" type="radio" name="fat" value="<10" checked=""><label for="fat-<10">до 10%</label>
+          <input id="fat-<30" type="radio" name="fat" value="<30"><label for="fat-<30">до 30%</label>
+          <input id="fat->30" type="radio" name="fat" value=">30"><label for="fat->30">выше 30%</label>
+        </div>
+      </fieldset>
+      <fieldset>
+          <legend class="filter-title">Наполнители:</legend>
+          <div class="container-buttons">
+            <input id="chocolate" type="checkbox" name="sugar" value="chocolate" checked=""><label for="chocolate">шоколадные</label>
+            <input id="sugar" type="checkbox" name="sugar" value="sugar" checked=""><label for="sugar">сахарные присыпки</label>
+            <input id="fruit" type="checkbox" name="sugar" value="fruit"><label for="fruit">фрукты</label>
+            <input id="syrop" type="checkbox" name="sugar" value="syrop"><label for="syrop">сиропы</label>
+            <input id="jam" type="checkbox" name="sugar" value="jam"><label for="jam">джемы</label>
+          </div>
+        </fieldset>
+        <input class="btn-filter" type="submit" value="Применить">
+</form>
 
-              <h2 class="visually-hidden">Форма выбора</h2>
-              <form class="choice-form" action="https://echo.htmlacademy.ru" method="post">
-                <div class="choice-wrapper">
-                <fieldset class="choice-form-item">
-                  <label class="choice-form__label" for="sort">Сортировка:</label>
-                  <select class="choice-form__select" id="sort" name="sort">
-                    <option class="choice-form__select__item" value="popularity">по популярности</option>
-                    <option class="choice-form__select__item" value="cheapest">сначала недорогие</option>
-                    <option class="choice-form__select__item" value="expensive">сначала дорогие</option>
-                    <option class="choice-form__select__item" value="fat-range">по жирности</option>
-                  </select>
-                  <svg class="select-arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-                    <polyline fill="currentColor" points="5.5,10 0,0 11,0 "/>
-                  </svg>
-                </fieldset>
 
-                <fieldset class="choice-form-item">
-                  <legend class="choice-form__price">Цена:
-                    <div class="price-controls">
-                      <label class="visually-hidden min-price" for="lowest-price">Наименьшая цена</label>
-                      <input  type="text" id="lowest-price" value="0">
-                      <p class="price-controls__label">руб.&ndash;</p>
-                      <label class="visually-hidden max-price" for="highest-price">Наибольшая цена</label>
-                      <input type="text" id="highest-price" value="500">
-                      <p class="price-controls__label">руб.</p>
-                    </div>
-                  </legend>
-                    <div class="choice-form-item__range-filter">
-                      <div class="range-controls">
-                        <div class="scale">
-                          <div class="bar" style="margin-left: 0%; width: 45%"></div>
-                        </div>
-                        <div class="toggle toggle-min"></div>
-                        <div class="toggle toggle-max"></div>
-                       </div>
-                    </div>
-                </fieldset>
 
-                <fieldset class="choice-form-item">
-                  <legend class="choice-form__fat">Жирность:</legend>
-                  <div class="choice-form__radio__wrapper">
-                    <input class="choice-form__radio" type="radio" id="choice-form-btn-1" name="fat" value="0">
-                    <label class="choice-form__label choice-form__radio__label" for="choice-form-btn-1">0%</label>
-                    <input class="choice-form__radio" type="radio" id="choice-form-btn-2" name="fat" value="up-to-10" checked>
-                    <label class="choice-form__label choice-form__radio__label" for="choice-form-btn-2">до 10%</label>
-                    <input class="choice-form__radio" type="radio" id="choice-form-btn-3" name="fat" value="up-to-30">
-                    <label class="choice-form__label choice-form__radio__label" for="choice-form-btn-3">до 30%</label>
-                    <input class="choice-form__radio" type="radio" id="choice-form-btn-4" name="fat" value="over-30">
-                    <label class="choice-form__label choice-form__radio__label" for="choice-form-btn-4">выше 30%</label>
-                  </div>
-                </fieldset>
-                <fieldset class="choice-form-item">
-                  <legend class="choice-form__inner">Наполнители:</legend>
-                  <div class="choice-form__checkbox__wrapper">
 
-                      <input class="choice-form__checkbox" type="checkbox" id="chocolate" name="chocolate" value="chocolate" checked>
-                      <label class="choice-form__label choice-form__checkbox__label" for="chocolate">шоколадные</label>
 
-                      <input class="choice-form__checkbox" type="checkbox" id="sugar" name="filler" value="sugar" checked>
-                      <label class="choice-form__label choice-form__checkbox__label" for="sugar">сахарные присыпки</label>
-
-                      <input class="choice-form__checkbox" type="checkbox" id="fruits" name="filler" value="fruits">
-                      <label class="choice-form__label choice-form__checkbox__label" for="fruits">фрукты</label>
-
-                      <input class="choice-form__checkbox" type="checkbox" id="syrup" name="filler" value="syrup">
-                      <label class="choice-form__label choice-form__checkbox__label" for="syrup">сиропы</label>
-
-                      <input class="choice-form__checkbox" type="checkbox" id="jam" name="filler" value="jam">
-                      <label class="choice-form__label choice-form__checkbox__label" for="jam">джемы</label>
-
-                </div>
-                </fieldset>
-                <button class="choice-form__sort-button" type="submit">Применить</button>
-              </div>
-              </form>
-        </section>
 
         <div class="icecreams">
             <article class="icecream"  tabindex="0">
@@ -438,19 +407,32 @@
                   </div>
                 </article>
             </div>
-         
-          <ul class="paginator">
-            <div class="paginator__wrapper">
-              <li class="paginator__item--prev"><a class="paginator__link paginator__link--prev" href="#">Назад</a></li>
-              <li class="paginator__item--current"><a class="paginator__link paginator__link--current" href="#">1</a></li>
-              <li class="paginator__item"><a class="paginator__link" href="#">2</a></li>
-              <li class="paginator__item"><a class="paginator__link" href="#">3</a></li>
-              <li class="paginator__item"><a class="paginator__link" href="#">4</a></li>
-              <li class="paginator__item"><a class="paginator__link" href="#">5</a></li>
-              <li class="paginator__item--next"><a class="paginator__link paginator__link--next" href="#">Вперёд</a></li>
-            </div>
+        <nav class="paginator__nav">              
+          <ul class="paginator_list">
+              <li class="paginator__item">
+                <a class="paginator__link paginator__link--prev" href="#">
+                </a>
+              </li>
+              <li class="paginator__item">
+                <a class="paginator__link paginator__link--current" href="#">1</a>
+              </li>
+              <li class="paginator__item">
+                <a class="paginator__link" href="#">2</a>
+              </li>
+              <li class="paginator__item">
+                <a class="paginator__link" href="#">3</a>
+              </li>
+              <li class="paginator__item">
+                <a class="paginator__link" href="#">4</a>
+              </li>
+              <li class="paginator__item">
+                <a class="paginator__link" href="#">5</a>
+              </li>
+              <li class="paginator__item">
+                <a class="paginator__link paginator__link--next" href="#"></a>
+              </li>
           </ul>
-
+        </nav>
         </section>
       </div>
     </main>
