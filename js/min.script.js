@@ -1,0 +1,1 @@
+var popup=document.querySelector(".feedback-show"),link=document.querySelector(".map_form_btn"),close=document.querySelector(".feedback-close");link.addEventListener("click",function(a){a.preventDefault(a),popup.classList.add("feedback-active")}),close.addEventListener("click",function(a){a.preventDefault(a),popup.classList.remove("feedback-active")});
